@@ -17,6 +17,8 @@ public class Rectangle
 		//Ask the user to enter the width
 		System.out.print("Please enter the width: ");
 		
+		//Byron
+		
 		//Get the width value from the user
 		width = userinput.nextInt();
 		
