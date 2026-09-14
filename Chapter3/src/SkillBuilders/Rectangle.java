@@ -10,14 +10,13 @@ public class Rectangle
 	    //Declare Variables
 		int length;
 		int width;
+		int area;
 		
 		//Create a Scanner object
 		Scanner userinput = new Scanner(System.in);
 		
 		//Ask the user to enter the width
 		System.out.print("Please enter the width: ");
-		
-		//Byron
 		
 		//Get the width value from the user
 		width = userinput.nextInt();
@@ -30,7 +29,14 @@ public class Rectangle
 		
 		//Display the width and length on the console
 		System.out.println("The width is: " + width );
-		System.out.print("The length is: " + length );
+		System.out.println("The length is: " + length );
+		
+		//Calculate the area and display the area on the console
+		area = length * width;
+		System.out.println("The area is: " + area);
+		
+		//Display the perimeter on the console
+		System.out.println("The perimeter is: " + 2 * (length + width));
 		
 	}
 	
