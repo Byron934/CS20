@@ -8,10 +8,10 @@ public class Rectangle
 	public static void main(String[] args) 
 	{
 
-	        Scanner scanner = new Scanner(System.in);
+	        Scanner userinput = new Scanner(System.in);
 	        
 	        System.out.print("Enter a 2-digit number: ");
-	        int number = scanner.nextInt();
+	        int number = userinput.nextInt();
 	        
 	        // Extract tens and ones digits
 	        int tens = number / 10;
@@ -20,6 +20,8 @@ public class Rectangle
 	        // Display the results
 	        System.out.println("Tens place digit: " + tens);
 	        System.out.println("Ones place digit: " + ones);
+	        
+	        userinput.close();
 	}
 	
 
