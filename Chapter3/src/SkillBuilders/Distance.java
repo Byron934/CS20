@@ -19,21 +19,22 @@ public class Distance
 		System.out.print("Please enter distance (km) of the first segment: ");
 				
 		//Get the distance of the first segment from the user
-		split1 = userinput.nextInt();
+		split1 = userinput.nextFloat();
 		
 		//Ask the user to enter the distance
 		System.out.print("Please enter distance (km) of the second segment: ");
 				
 		//Get the distance of the second segment from the user
-		split2 = userinput.nextInt();
+		split2 = userinput.nextFloat();
 		
 		//Ask the user to enter the distance
 		System.out.print("Please enter distance (km) of the third segment: ");
 				
 		//Get the distance of the third segment from the user
-		split3 = userinput.nextInt();
+		split3 = userinput.nextFloat();
 		
-		//Calculate the area and display the area on the console		
+		//Calculate the area and display the area on the console
+		float total;
 		total = split1 + split2 +split3;
 		System.out.println("The total distance of the race is: " + total);
 		
