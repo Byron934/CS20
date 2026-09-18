@@ -1,10 +1,8 @@
 /*
 
-Program: Exercise1.java          Last Date of this Revision: September 18, 2026
+Program: Exercise5.java          Last Date of this Revision: September 18, 2026
 
-Purpose: An application that can display the height of an object at any given time 
-that was dropped from a starting height of 100 meters and is accelerating downwards 
-at 4.9 meters per second squared.
+Purpose: 
 
 Author: Byron Hedges, 
 School: CHHS
@@ -17,7 +15,7 @@ package Mastery;
 
 import java.util.Scanner;
 
-public class Exercise1 {
+public class Exercise5 {
 
 	public static void main(String[] args) {
 	
@@ -52,4 +50,3 @@ Please enter a time less than 4.5s: 1.5
 The height of the object is: 88.975m
  
  */
-
