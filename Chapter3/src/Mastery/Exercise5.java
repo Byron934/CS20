@@ -1,12 +1,9 @@
 /*
 
-Program: Exercise5.java          Last Date of this Revision: September 18, 2026
+Program: Exercise5.java          Last Date of this Revision: September 21, 2026
 
-Purpose: 
-
-Author: Byron Hedges, 
-School: CHHS
-Course: Computer Programming 20
+Purpose: Create an application that prompts the user for an dollar ammount (ideally under $1.00)
+and then displays the minumum number of coins necessary to make the change. Displays the
 
 */
 
@@ -20,25 +17,29 @@ public class Exercise5 {
 	public static void main(String[] args) {
 	
 		//Declare Variables
-	    float t;
-	    float x;
-	    float h;
+		int change, quarters, dimes, nickels, pennies;
 	    
 	    //Create a Scanner object
 		Scanner userinput = new Scanner(System.in);
 		
-		//Ask the user to enter the time
-		System.out.print("Please enter a time less than 4.5s: ");
+		//Ask the user to enter the amount of change
+		System.out.print("Please enter an amount of change less than $1.00: ");
 		
-		//Get the grade from the user
-		t = userinput.nextFloat();
+		//Get the change from the user
+		change = userinput.nextInt();
 		
-		//Calculate t^2 first and then the height based on the given time
-		x = t*t;
-		h = 100 -4.9f*x;
+		//Calculate the minimum amount of coins
+		quarters = change / 25;
+		dimes = change % 25 / 10;
+		nickels = change % 25 % 10 / 5;
+		pennies = change % 25 % 10 % 5 / 1;
 		
-		//Display the height for the user
-		System.out.println("The height of the object is: " + h +"m");
+		
+		//Display the number of coins for the user
+		System.out.println("The number of quarters is: " + quarters);
+		System.out.println("The number of dimes is: " + dimes);
+		System.out.println("The number of nickels is: " + nickels);
+		System.out.println("The number of pennies is: " + pennies);
 		
 	}
 
@@ -46,7 +47,17 @@ public class Exercise5 {
 
 /* Screen Dump
  
-Please enter a time less than 4.5s: 1.5
-The height of the object is: 88.975m
- 
+ Please enter an amount of change less than $1.00: 99
+The number of quarters is: 3
+The number of dimes is: 2
+The number of nickels is: 0
+The number of pennies is: 4
+
+
+Please enter an amount of change less than $1.00: 33
+The number of quarters is: 1
+The number of dimes is: 0
+The number of nickels is: 1
+The number of pennies is: 3
+
  */

@@ -1,14 +1,10 @@
 /*
 
-Program: Exercise1.java          Last Date of this Revision: September 18, 2026
+Program: Exercise1.java          Last Date of this Revision: September 21, 2026
 
-Purpose: An application that can display the height of an object at any given time 
+Purpose: Create an application that can display the height of an object at any given time 
 that was dropped from a starting height of 100 meters and is accelerating downwards 
 at 4.9 meters per second squared.
-
-Author: Byron Hedges, 
-School: CHHS
-Course: Computer Programming 20
 
 */
 
@@ -22,9 +18,7 @@ public class Exercise1 {
 	public static void main(String[] args) {
 	
 		//Declare Variables
-	    float t;
-	    float x;
-	    float h;
+	    float t, x, h;
 	    
 	    //Create a Scanner object
 		Scanner userinput = new Scanner(System.in);
@@ -50,6 +44,10 @@ public class Exercise1 {
  
 Please enter a time less than 4.5s: 1.5
 The height of the object is: 88.975m
+
+
+Please enter a time less than 4.5s: 3.7
+The height of the object is: 32.919m
  
  */
 
