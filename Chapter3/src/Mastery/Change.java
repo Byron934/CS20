@@ -12,7 +12,7 @@ package Mastery;
 
 import java.util.Scanner;
 
-public class Exercise5 {
+public class Change {
 
 	public static void main(String[] args) {
 	
