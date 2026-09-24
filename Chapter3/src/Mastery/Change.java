@@ -1,6 +1,6 @@
 /*
 
-Program: Exercise5.java          Last Date of this Revision: September 22, 2026
+Program: Exercise5.java          Last Date of this Revision: September 24, 2026
 
 Purpose: Create an application that prompts the user for an dollar ammount (ideally under $1.00)
 and then displays the minumum number of coins necessary to make the change. Displays the
@@ -61,6 +61,13 @@ The minimum number of coins is: 5
 The number of quarters is: 1
 The number of dimes is: 0
 The number of nickels is: 1
+The number of pennies is: 3
+
+Please enter an amount of change less than $1.00: 78
+The minimum number of coins is: 6
+The number of quarters is: 3
+The number of dimes is: 0
+The number of nickels is: 0
 The number of pennies is: 3
 
  */

@@ -49,5 +49,8 @@ The height of the object is: 88.975m
 Please enter a time less than 4.5s: 3.7
 The height of the object is: 32.919m
  
+ Please enter a time less than 4.5s: 3.75
+The height of the object is: 31.09375m
+ 
  */
 
