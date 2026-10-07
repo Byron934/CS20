@@ -1,3 +1,13 @@
+/*
+
+Program: MathTutor.java          Last Date of this Revision: October 7, 2026
+
+Purpose: Create a MathTutor application that displays math problems by randomly generating 
+2 numbers (1-10) and an operator (+-/*), and then prompts the user for an answer. 
+The application should check the answer, display a message and the correct answer if necessary.
+
+*/
+
 package Mastery;
 
 import java.util.Scanner;
@@ -22,6 +32,7 @@ public class MathTutor {
 	int answer;
 	String symbol;
 	
+	//Match the random number from 0 - 3 to an operator
 	if (operator == 0) {
 	
 		symbol = "+";
@@ -53,16 +64,34 @@ public class MathTutor {
 	//Get users answer
 	int userAnswer = Input.nextInt();
 	
-	//Check the answer and the display whether or not the user was correct
+	//Check the answer and the display whether or not the user was correct 
+	//as well as the correct answer if need be
 	if (userAnswer == answer) {
 		System.out.print("Correct!");
 		
 	}
 	else
 	{
-		System.out.print("Incorrect!");
-		System.out.print("The correct answer is" + answer);
+		System.out.println("Incorrect!");
+		System.out.print("The correct answer is " + answer);
 	}
 }
 	
 }
+
+/*
+
+9*4 = 36
+Correct!
+
+
+8-3 = 6
+Incorrect!
+The correct answer is 5
+
+
+10/10 = 1
+Correct!
+
+ */
+
