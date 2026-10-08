@@ -54,6 +54,12 @@ public class MathTutor {
 	else {
 		
 		symbol = "/";
+		
+		//Change num2 until it can divide num1 evenly (reaminder = 0)
+		while (num1 % num2 != 0) {
+			num2 = random.nextInt(10) + 1;
+		}
+		
 		answer = num1 / num2;
 
 	}
@@ -90,7 +96,7 @@ Incorrect!
 The correct answer is 5
 
 
-10/10 = 1
+10/5 = 2
 Correct!
 
  */
