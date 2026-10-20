@@ -29,11 +29,13 @@ public class DigitsSum {
 		//Get the users answer
 		number = userinput.nextInt();
 		
+		//Output a seperate message if the number input was zero
 		if (number == 0) {
 			System.out.println("The digit is: 0");
 			System.out.println("The sum of the digits is 0.");
 		}
 		
+		//Help correct the user if they accidently input a negative integer
 		else if (number < 0) {
 			System.out.println("Please only enter a POSITIVE integer.");
 		}
