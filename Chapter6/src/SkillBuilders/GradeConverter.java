@@ -71,6 +71,7 @@ public class GradeConverter
 				return("A");
 			}
 		}
+	return ("");
 	}
 	public static void main(String[] args) 
 	{

@@ -3,12 +3,29 @@ public class Methods {
 
 	public static void main(String[] args) {
 
-	
+	//Method1
+	addWelcome();
 
+	//Method2
+	greetStudent("Kyle");
+	
+	//Method3
+	int total = addnumbers(8,71); 
+	
+	System.out.println("Total is: " + total);
+	
+	//Method4
+	double area = calculateArea(2.75);
+	System.out.println("Area: "+ area);
+	
+	//Method5
+	isPassing(85);
+	//System.out.println("Passing: " + result);
+	
 	}
 
 	//Method #1 no parameters and no return value
-	public static void addMessage() 
+	public static void addWelcome() 
 	{
 		System.out.println("Welcome to our class!");
 	}
@@ -22,7 +39,7 @@ public class Methods {
 	//Method #3 Two parameter, return an integer
 	public static int addnumbers(int a, int b)
 	{
-		int sum = a = b;
+		int sum = a + b;
 		return sum;
 	}
 	
