@@ -34,7 +34,7 @@ public class AddCoins {
 		int pennies = userinput.nextInt();
 		
 		String totalSum = getDollarAmount(quarters, dimes, nickels, pennies);
-		System.out.println(totalSum);
+		System.out.println("Total: " + totalSum);
 
 	}
 	
