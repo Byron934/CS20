@@ -27,4 +27,20 @@ public class GameCharacter {
 		
 	}
 	
+	public void takeDamage(int damage)
+	{
+		health = health - damage;
+		
+		if (health < 0)
+		{
+		health = 0;
+		}
+		System.out.println(name + "health is now" + health);
+	}
+	
+	public String getStatus()
+	{
+		return name + "has" + health + "health.";
+ 	}
+	
 }
