@@ -18,5 +18,33 @@ public class Circle
 		radius = r;	
 	}
 	
+	//Modifier method
+	public void setradius(double r) {
+		radius = r;
+	}
+	
+	//Accessor method
+	public double getRadius()
+	{
+		return radius;
+	}
+	
+	//Area method
+	public double area()
+	{
+		double cArea;
+		
+		cArea = PI * radius * radius;
+		
+		return cArea;
+	}
+	
+	//Circumference method
+	public double circumference()
+	{
+		double c = 2 * PI * radius;
+		
+		return c;
+	}
 	
 }
