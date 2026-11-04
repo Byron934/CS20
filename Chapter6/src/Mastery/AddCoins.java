@@ -17,11 +17,15 @@ import java.util.Scanner;
 
 public class AddCoins {
 
+	//Main method
 	public static void main(String[] args) {
+		
+		//Creates a new scanner object
 		Scanner userinput = new Scanner(System.in);
 		
-		
+		//Asks the user for the amount of a certain coin
 		System.out.println("Please enter your number of quarters: ");
+		//Stores the users answer
 		int quarters = userinput.nextInt();
 		
 		System.out.println("Please enter your number of dimes: ");
@@ -33,24 +37,30 @@ public class AddCoins {
 		System.out.println("Please enter your number of pennies: ");
 		int pennies = userinput.nextInt();
 		
+		//Calls the helper method and stores the returned string
 		String totalSum = getDollarAmount(quarters, dimes, nickels, pennies);
+		//Displays the total dollar amount to the user
 		System.out.println("Total: " + totalSum);
 
 	}
 	
+	//Creates a helper method to calculate the total dollar amount
 	public static String getDollarAmount(int quarters, int dimes, int nickels, int pennies)
 	{
+		//Calculate the total dollar amount of each coin
 		double total1 = quarters * 0.25;
 		double total2 = dimes * 0.10;
 		double total3 = nickels * 0.05;
 		double total4 = pennies * 0.01;
 		
+		//Sum the totals
 		double totalSum = total1 + total2 + total3 + total4;
+		
+		//Ensures that the dollar sign will be included in the output
 		String display = "$" + totalSum;
 		
+		//Sends the string back to the main method where it was called
 		return display;
-		
-		
 	}
 
 }
