@@ -45,7 +45,7 @@ public class GradeConverter
 			}
 			else
 			{
-				return("c");
+				return("C");
 			}
 		}
 	else if (numGrade < 90)
@@ -85,19 +85,19 @@ public class GradeConverter
 		
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Enter a numeric grade (-1 to quite): ");
+		System.out.println("Enter a numeric grade (-1 to quit): ");
 	
 			//record user input in numericGrade
 		numericGrade = input.nextInt();
 		
-		while(numericGrade!= FLAG);
+		while(numericGrade!= FLAG)
 		{
 			
 			if (isValidNumber(numericGrade, minValue, maxValue))
 			{
 				
 				letterGrade = getLetterGrade(numericGrade);
-				System.out.println("The grade" + numericGrade + "is a(n)" + letterGrade + ".");
+				System.out.println("The grade " + numericGrade + " is a(n) " + letterGrade + ".");
 				
 			}
 			else
