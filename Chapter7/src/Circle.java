@@ -47,4 +47,13 @@ public class Circle
 		return c;
 	}
 	
-}
+	public String toString()
+	{
+		String c;
+		
+		c = "Circle has radius: " + radius;
+		
+		return c;
+	}
+	
+}//Closes the class
