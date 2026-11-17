@@ -1,6 +1,7 @@
 
 public class Circle 
 {
+	
 	//Instance variables
 	//number will never change
 	private static final double PI = 3.14;
