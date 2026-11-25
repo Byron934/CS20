@@ -54,9 +54,10 @@ public class MySavings {
 				break;
 				
 			case 2:
-				
+				//Calls an add coin method from the piggyBank class
+				//Adds 1 to the existing number of that coin
 				bank.addPenny(1);
-				
+				//Tells the user that the task has been completed
 				System.out.println("Added a penny");
 				break;
 				
@@ -76,30 +77,45 @@ public class MySavings {
 				break;
 				
 			case 6:
+				//Calls the takeOutMoney() method from the PiggyBank class
 				bank.takeOutMoney();
+				//Tells the user that all the money in the bank has been taken out
 				System.out.println("All money has been removed ");
 				break;
 				
+			//When the user wants to quit, their choice will be 0
 			case 0:
+				//Thanks the user for using the application
 				System.out.println("Thanks for using MySavings!");
 				break;
 				
+			//If the choice chosen doesn't exist or the choice is negative
 			default:
+				//Tells user that they need to try again
 				System.out.println("Invalid choice. Please enter a whole number between 0 and 6");
 			}
 		}
-		while (choice != 0);
 		
+		//Loop continues until the user quits by entering 0 as their choice
+		while (choice != 0);
 	}
 	
+	//Creates a helper method that includes the option menu
 	public static void displayMenu()
 	{
+		//Quit by entering 0
 		System.out.println("0. Enter 0 to quit");
+		
+		//See the current total by entering 1
 		System.out.println("1. Show total in bank");
+		
+		//Says how to add a coin
 		System.out.println("2. Add a penny");
 		System.out.println("3. Add a nickel");
 		System.out.println("4. Add a dime");
 		System.out.println("5. Add a quarter");
+		
+		//Empty the bank by entering 6
 		System.out.println("6. Take money out of bank");
 	}
 
@@ -180,6 +196,59 @@ Added a penny
 Please enter your choice (a number 0 - 6): 
 6
 All money has been removed 
+0. Enter 0 to quit
+1. Show total in bank
+2. Add a penny
+3. Add a nickel
+4. Add a dime
+5. Add a quarter
+6. Take money out of bank
+Please enter your choice (a number 0 - 6): 
+0
+Thanks for using MySavings!
+
+
+
+0. Enter 0 to quit
+1. Show total in bank
+2. Add a penny
+3. Add a nickel
+4. Add a dime
+5. Add a quarter
+6. Take money out of bank
+Please enter your choice (a number 0 - 6): 
+8
+Invalid choice. Please enter a whole number between 0 and 6
+0. Enter 0 to quit
+1. Show total in bank
+2. Add a penny
+3. Add a nickel
+4. Add a dime
+5. Add a quarter
+6. Take money out of bank
+Please enter your choice (a number 0 - 6): 
+3
+Added a nickel
+0. Enter 0 to quit
+1. Show total in bank
+2. Add a penny
+3. Add a nickel
+4. Add a dime
+5. Add a quarter
+6. Take money out of bank
+Please enter your choice (a number 0 - 6): 
+3
+Added a nickel
+0. Enter 0 to quit
+1. Show total in bank
+2. Add a penny
+3. Add a nickel
+4. Add a dime
+5. Add a quarter
+6. Take money out of bank
+Please enter your choice (a number 0 - 6): 
+1
+Total in bank: $0.1
 0. Enter 0 to quit
 1. Show total in bank
 2. Add a penny
