@@ -15,11 +15,66 @@ player receives no points and the correct answer is displayed. The game continue
 
 package Mastery;
 
+import java.util.Scanner;
+
+//Class that runs the game, and manages user input and output
 public class Adder {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		Scanner input = new Scanner(System.in);
+		
+		int score = 0, guess = 0;
+		
+		while (guess != 999)
+		{
+			AdditionProblem problem = new AdditionProblem();
+			
+			System.out.println(problem.getNum1() + " + " + problem.getNum2() + " = ");
+			
+			for (int attempt = 1; attempt <= 3; attempt++)
+			{
+				guess = input.nextInt();
+				
+				if (guess == 999)
+				{
+					break;
+				}
+				
+				if (problem.checkAnswer(guess))
+				{
+					if (attempt == 1)
+					{
+						score += 5;
+					}
+					
+					else if (attempt == 2)
+					{
+						score += 3;
+					}
+					
+					else
+					{
+						score += 1;
+					}
+					
+					break;
+				}
+				
+				else
+				{
+					System.out.println("Wrong answer. Enter another answer: ");
+					
+					if (attempt == 3)
+					{
+						System.out.print("The correct answer was " + problem.getAnswer());
+					}
+				}
+			}
+			
+		}
+		
+		System.out.println("Your score is:" + score);
 	}
 
 }
